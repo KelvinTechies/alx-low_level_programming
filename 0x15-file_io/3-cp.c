@@ -33,11 +33,11 @@ char *create_buffer(char *file)
  */
 void close_file(int fd)
 {
-	int c;
+	int cMd;
 
-	c = close(fd);
+	cMd = close(fd);
 
-	if (c == -1)
+	if (cMd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
